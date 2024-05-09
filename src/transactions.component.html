@@ -1,0 +1,21 @@
+<h2>My Transactions</h2>
+
+<div>
+  <label for="new-transaction">Transaction name: </label>
+  <input id="new-transaction" #transactionName />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button type="button" class="add-button" (click)="add(transactionName.value); transactionName.value=''">
+    Add transaction
+  </button>
+</div>
+
+<ul class="heroes">
+  <li *ngFor="let transaction of transactions">
+    <a routerLink="/detail/{{transaction.id}}">
+      <span class="badge">{{transaction.id}}</span> {{transaction.name}}
+    </a>
+    <button type="button" class="delete" title="delete transaction"
+      (click)="delete(transaction)">x</button>
+  </li>
+</ul>

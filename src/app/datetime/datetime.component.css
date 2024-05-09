@@ -1,0 +1,30 @@
+.datetime-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .datetime {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .datetime-icon {
+    margin-bottom: 5px;
+  }
+  
+  .datetime-clock {
+    animation: rotate 1s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

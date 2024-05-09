@@ -1,0 +1,6 @@
+<div *ngFor="let entry of history; let i = index">
+    <p>Time: {{ entry.time }}</p>
+    <p>Operation: {{ entry.operation }}</p>
+    <p>Result: {{ entry.result }}</p>
+    <button (click)="removeEntry(i)">Remove</button>
+</div>

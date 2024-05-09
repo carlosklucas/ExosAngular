@@ -1,0 +1,37 @@
+/* Style for the Transaction Detail component */
+.transaction-detail {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Style for the heading */
+.transaction-detail h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style for the paragraphs */
+.transaction-detail p {
+  margin-bottom: 8px;
+}
+
+/* Style for the button */
+.transaction-detail button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transaction-detail button:hover {
+  background-color: #0056b3;
+}

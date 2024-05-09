@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "Carlos Lucas",
+      "age": 38,
+      "email": "carlos@gmail.com",
+      "address": "Travessa dos Mastros 20, Lisboa"
+    },
+    {
+      "id": 2,
+      "name": "Joana Botelho",
+      "age": 33,
+      "email": "joanabotelho@gmail.com",
+      "address": "Rua do Ouro 4, Lisboa"
+    },
+    {
+      "id": 3,
+      "name": "Maria Nunes",
+      "age": 31,
+      "email": "maria@gmail.com",
+      "address": "Rua da Prata 4, Lisboa"
+    }
+  ]
+    

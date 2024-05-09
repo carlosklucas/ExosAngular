@@ -1,0 +1,21 @@
+<app-datetime></app-datetime>
+<h1>Bank Transactions Report</h1>
+<h2>Transactions List</h2>
+<div class="transactions-list">
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Amount</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of transactions" routerLink="/detail/{{transaction.id}}">  
+      <td>{{ transaction.date }}</td>
+      <td>{{ transaction.amount }}</td>
+      <td>{{ transaction.description }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

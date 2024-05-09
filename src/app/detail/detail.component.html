@@ -1,0 +1,10 @@
+<app-datetime></app-datetime>
+<div class="transaction-detail" *ngIf="transaction">
+    <h2>Transaction Detail: {{ transaction.name | uppercase }}</h2>
+    <p>Id: {{ transaction.id }}</p>
+    <p>Name: {{ transaction.name }}</p>
+    <p>Age: {{ transaction.age }}</p>
+    <p>Email: {{ transaction.email }}</p>
+    <p>Address: {{ transaction.address }}</p>
+  <button type="button" (click)="goBack()">go back</button>
+</div>

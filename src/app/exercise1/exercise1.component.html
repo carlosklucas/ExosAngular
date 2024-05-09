@@ -1,0 +1,27 @@
+<div>
+<h1 [style.font-family]="selectedFont" [style.font-size.px]="fontSize" [style.text-align]="getAlignment()">Hello {{ userName | uppercase }}!</h1>
+</div>
+
+<label for="name">Enter your name:</label>
+<input id="name" type="text" [(ngModel)]="userName" placeholder="Your name">
+
+<label for="font">Choose a font:</label>
+<select id="font" [(ngModel)]="selectedFont">
+  <option value="Arial">Arial</option>
+  <option value="Times New Roman">Times New Roman</option>
+</select>
+
+<label for="size">Choose a font size:</label>
+<input id="size" type="number" [(ngModel)]="fontSize">
+
+<label>Choose alignment:</label>
+<div>
+  <input type="checkbox" (change)="updateAlignment('left', $event)"> Left
+  <input type="checkbox" (change)="updateAlignment('center', $event)"> Center
+  <input type="checkbox" (change)="updateAlignment('right', $event)"> Right
+</div>
+<h2>Test your font, size and alignment:</h2>
+<br>
+<div [style.font-family]="selectedFont" [style.font-size.px]="fontSize" [style.text-align]="getAlignment()">
+    Feel free to test {{ userName | uppercase }}!
+</div>
